@@ -28,7 +28,7 @@ cd Local-Llama-Bot
 pip3 install -r requirements.txt
 ```
 
-#### 3. Ensure you have the Llama 3 - 8B model set up and running locally on `http://0.0.0.0:11434`.
+### 3. Ensure you have the Llama 3 - 8B model set up and running locally on `http://0.0.0.0:11434`.
 
 ### 4. Run the Streamlit app:
 
