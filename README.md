@@ -18,7 +18,7 @@ This project implements a user-friendly web interface for interacting with the L
 ### 1. Clone this repository:
 
 ```bash
-git clone git@github.com:NishchalRavish/Local-Llama-Bot.git
+git clone https://github.com/NishchalRavish/Local-Llama-Bot.git
 cd Local-Llama-Bot
 ```
 
