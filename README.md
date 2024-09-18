@@ -15,22 +15,22 @@ This project implements a user-friendly web interface for interacting with the L
 
 ## 🛠 Installation
 
-1. Clone this repository:
+### 1. Clone this repository:
 
 ```bash
 git clone git@github.com:NishchalRavish/Local-Llama-Bot.git
 cd Local-Llama-Bot
 ```
 
-2. Install the required packages:
+### 2. Install the required packages:
 
 ```bash
 pip3 install -r requirements.txt
 ```
 
-3. Ensure you have the Llama 3 - 8B model set up and running locally on `http://0.0.0.0:11434`.
+## 3. Ensure you have the Llama 3 - 8B model set up and running locally on `http://0.0.0.0:11434`.
 
-4. Run the Streamlit app:
+### 4. Run the Streamlit app:
 
 ```bash
 streamlit run app.py
