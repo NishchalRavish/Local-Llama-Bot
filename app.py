@@ -42,11 +42,8 @@ with st.sidebar:
     - 💬 Interactive Chat
     - 🚀 Fast Responses
     ''')
-    add_vertical_space(1)
-    st.write('Made by Nishchal')
-
-if "messages" not in st.session_state:
-    st.session_state.messages = []
+    st.markdown("### Made by Nishchal")
+    
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
