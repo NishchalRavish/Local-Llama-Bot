@@ -1,6 +1,11 @@
 import streamlit as st
 import requests
 import json
+from streamlit_lottie import st_lottie
+from streamlit_extras.colored_header import colored_header
+from streamlit_extras.add_vertical_space import add_vertical_space
+
+st.set_page_config(page_title="Chatbot", page_icon="🦙", layout="wide")
 
 def chat(messages):
     request = requests.post(
@@ -25,8 +30,20 @@ def chat(messages):
     message = {"role": "assistant", "content": output}
     return message
 
-st.title('🦙 llama 3 - 8B Bot')
+st.title('🦙 Llama 3 - 8B Bot')
 st.write('Interact with llama 3 locally!')
+
+with st.sidebar:
+    st.title("🦙 Llama 3 Chatbot")
+    st.markdown('''
+    ## About
+    This chatbot is powered by Llama 3 - 8B model:
+    - 🧠 Local AI
+    - 💬 Interactive Chat
+    - 🚀 Fast Responses
+    ''')
+    add_vertical_space(1)
+    st.write('Made by Nishchal')
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
